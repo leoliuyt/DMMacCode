@@ -11,6 +11,8 @@
 		6B2974AF2080460C00ADE112 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B2974AE2080460C00ADE112 /* Assets.xcassets */; };
 		6B2974B52080460C00ADE112 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B2974B42080460C00ADE112 /* main.m */; };
 		6B2974BE208048E300ADE112 /* DMRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B2974BD208048E300ADE112 /* DMRootViewController.m */; };
+		6B2974C4208089C900ADE112 /* DMMainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B2974C3208089C900ADE112 /* DMMainWindowController.m */; };
+		6B2974C720808D5B00ADE112 /* DMMainMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B2974C620808D5B00ADE112 /* DMMainMenu.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,10 @@
 		6B2974B62080460C00ADE112 /* DMMacCode.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DMMacCode.entitlements; sourceTree = "<group>"; };
 		6B2974BC208048E300ADE112 /* DMRootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DMRootViewController.h; sourceTree = "<group>"; };
 		6B2974BD208048E300ADE112 /* DMRootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DMRootViewController.m; sourceTree = "<group>"; };
+		6B2974C2208089C900ADE112 /* DMMainWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DMMainWindowController.h; sourceTree = "<group>"; };
+		6B2974C3208089C900ADE112 /* DMMainWindowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DMMainWindowController.m; sourceTree = "<group>"; };
+		6B2974C520808D5B00ADE112 /* DMMainMenu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DMMainMenu.h; sourceTree = "<group>"; };
+		6B2974C620808D5B00ADE112 /* DMMainMenu.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DMMainMenu.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +63,10 @@
 			children = (
 				6B2974AB2080460B00ADE112 /* AppDelegate.h */,
 				6B2974AC2080460B00ADE112 /* AppDelegate.m */,
+				6B2974C520808D5B00ADE112 /* DMMainMenu.h */,
+				6B2974C620808D5B00ADE112 /* DMMainMenu.m */,
+				6B2974C2208089C900ADE112 /* DMMainWindowController.h */,
+				6B2974C3208089C900ADE112 /* DMMainWindowController.m */,
 				6B2974BC208048E300ADE112 /* DMRootViewController.h */,
 				6B2974BD208048E300ADE112 /* DMRootViewController.m */,
 				6B2974AE2080460C00ADE112 /* Assets.xcassets */,
@@ -141,6 +151,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6B2974BE208048E300ADE112 /* DMRootViewController.m in Sources */,
+				6B2974C720808D5B00ADE112 /* DMMainMenu.m in Sources */,
+				6B2974C4208089C900ADE112 /* DMMainWindowController.m in Sources */,
 				6B2974B52080460C00ADE112 /* main.m in Sources */,
 				6B2974AD2080460B00ADE112 /* AppDelegate.m in Sources */,
 			);

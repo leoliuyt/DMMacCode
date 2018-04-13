@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 #import "DMRootViewController.h"
+#import "DMMainWindowController.h"
+#import "DMMainMenu.h"
 
 @interface AppDelegate ()<NSWindowDelegate>
 
@@ -17,6 +19,15 @@
 
 @implementation AppDelegate
 
+- (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
+    DMMainWindowController *mainWindowController = [[DMMainWindowController alloc] init];
+    [mainWindowController showWindow:self];
+    
+    DMMainMenu *mainMenu = [[DMMainMenu alloc] init];
+    [NSApplication sharedApplication].mainMenu = mainMenu;
+}
+
+/*
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     // Insert code here to initialize your application
     
@@ -45,6 +56,7 @@
     
     self.window.delegate = self;
 }
+ */
 
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
