@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		36013E2C69E3519BF29C13CB /* libPods-DMMacCode.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 89093215F7B04CC300ED5EF8 /* libPods-DMMacCode.a */; };
 		6B2974AD2080460B00ADE112 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B2974AC2080460B00ADE112 /* AppDelegate.m */; };
 		6B2974AF2080460C00ADE112 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B2974AE2080460C00ADE112 /* Assets.xcassets */; };
 		6B2974B52080460C00ADE112 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B2974B42080460C00ADE112 /* main.m */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		42FFB5F92A5301CE27735506 /* Pods-DMMacCode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DMMacCode.release.xcconfig"; path = "Pods/Target Support Files/Pods-DMMacCode/Pods-DMMacCode.release.xcconfig"; sourceTree = "<group>"; };
+		5776438203B42EF385A9EE08 /* Pods-DMMacCode.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DMMacCode.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DMMacCode/Pods-DMMacCode.debug.xcconfig"; sourceTree = "<group>"; };
 		6B2974A82080460B00ADE112 /* DMMacCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DMMacCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B2974AB2080460B00ADE112 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6B2974AC2080460B00ADE112 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -29,6 +32,7 @@
 		6B2974C3208089C900ADE112 /* DMMainWindowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DMMainWindowController.m; sourceTree = "<group>"; };
 		6B2974C520808D5B00ADE112 /* DMMainMenu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DMMainMenu.h; sourceTree = "<group>"; };
 		6B2974C620808D5B00ADE112 /* DMMainMenu.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DMMainMenu.m; sourceTree = "<group>"; };
+		89093215F7B04CC300ED5EF8 /* libPods-DMMacCode.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DMMacCode.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,17 +40,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36013E2C69E3519BF29C13CB /* libPods-DMMacCode.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		30DDB731EABC32FA7FE02A2D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5776438203B42EF385A9EE08 /* Pods-DMMacCode.debug.xcconfig */,
+				42FFB5F92A5301CE27735506 /* Pods-DMMacCode.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		36B61C15CB2D40907F32BF44 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				89093215F7B04CC300ED5EF8 /* libPods-DMMacCode.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6B29749F2080460B00ADE112 = {
 			isa = PBXGroup;
 			children = (
 				6B2974AA2080460B00ADE112 /* DMMacCode */,
 				6B2974A92080460B00ADE112 /* Products */,
+				30DDB731EABC32FA7FE02A2D /* Pods */,
+				36B61C15CB2D40907F32BF44 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -84,6 +108,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6B2974B92080460C00ADE112 /* Build configuration list for PBXNativeTarget "DMMacCode" */;
 			buildPhases = (
+				35CF941DC6088862699970D4 /* [CP] Check Pods Manifest.lock */,
 				6B2974A42080460B00ADE112 /* Sources */,
 				6B2974A52080460B00ADE112 /* Frameworks */,
 				6B2974A62080460B00ADE112 /* Resources */,
@@ -144,6 +169,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		35CF941DC6088862699970D4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DMMacCode-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6B2974A42080460B00ADE112 /* Sources */ = {
@@ -272,16 +318,14 @@
 		};
 		6B2974BA2080460C00ADE112 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5776438203B42EF385A9EE08 /* Pods-DMMacCode.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = DMMacCode/DMMacCode.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = DMMacCode/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = com.msb.DMMacCode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -290,16 +334,14 @@
 		};
 		6B2974BB2080460C00ADE112 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42FFB5F92A5301CE27735506 /* Pods-DMMacCode.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = DMMacCode/DMMacCode.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = DMMacCode/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = com.msb.DMMacCode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
